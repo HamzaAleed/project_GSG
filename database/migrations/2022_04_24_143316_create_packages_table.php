@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('tracking_number');
             //$table->string('slug')->unique();
             $table->string('phone');
-            $table->enum('status', ['Pending', 'Not found', 'In transit', 'Expired', 'Pick up', 'Undelivered', 'Delivered', 'Alert']);
+            $table->string('status');
+            // , ['Pending', 'Not found', 'In transit', 'Expired', 'Pick up', 'Undelivered', 'Delivered', 'Alert']);
             $table->longText('StatusDescription')->nullable();
             $table->string('address')->nullable();
             //$table->date('birthday')->nullable();
