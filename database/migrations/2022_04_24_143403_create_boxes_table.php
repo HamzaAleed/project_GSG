@@ -16,12 +16,21 @@ return new class extends Migration
         Schema::create('boxes', function (Blueprint $table) {
             $table->id()->startingValue(1);
 
-            $table->bigInteger('user_id')->unsigned()->nullable();
-            //   $table->foreignId('user_id')
-            //   ->constrained('users');
-             $table->foreign('user_id')
-             ->references('id')->on('users')
-             ->nullOnDelete();
+            // $table->bigInteger('user_id')->unsigned()->nullable();
+            // //   $table->foreignId('user_id')
+            // //   ->constrained('users');
+            //  $table->foreign('user_id')
+            //  ->references('id')->on('users')
+            //  ->nullOnDelete();
+
+             $table->string('number');
+             $table->string('phone');
+             $table->string('user');
+
+
+            //  $table->string('name');
+
+
 
 
              $table->foreignId('area_id')

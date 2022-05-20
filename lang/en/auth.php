@@ -12,8 +12,8 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
-    'failed' => 'These credentials do not match our records.',
+    'failed' => 'If you have any issues please contact with your manager.',
+    // 'failed' => 'These credentials do not match our records.',
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 

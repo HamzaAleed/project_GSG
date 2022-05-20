@@ -14,7 +14,7 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'default_avatar'               => 'users/default.png',
-        'redirect'                     => '/admin',
+        'redirect'                     => '/',
     ],
 
     /*
@@ -132,11 +132,11 @@ return [
                 'classes'    => 'class-full-of-rum',
                 'icon_class' => 'voyager-person',
             ],
-            'voyager::generic.home' => [
-                'route'        => '/',
-                'icon_class'   => 'voyager-home',
-                'target_blank' => true,
-            ],
+            // 'voyager::generic.home' => [
+            //     'route'        => '/',
+            //     'icon_class'   => 'voyager-home',
+            //     'target_blank' => true,
+            // ],
             'voyager::generic.logout' => [
                 'route'      => 'voyager.logout',
                 'icon_class' => 'voyager-power',
@@ -144,6 +144,14 @@ return [
         ],
 
         'widgets' => [
+
+
+            'App\\Widgets\\Packages',
+            'App\\Widgets\\Boxes',
+            'App\\Widgets\\Invoices',
+            //'TCG\\Voyager\\Widgets\\PackageDimmer',
+            // 'APP\\Widgets\\Packages',
+
 
         ],
 
@@ -181,7 +189,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#FECE08',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
