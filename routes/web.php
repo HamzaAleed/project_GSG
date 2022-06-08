@@ -1,10 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User;
 // use App\Http\Controllers\User;
- use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Facades\Voyager;
+use App\Http\Controllers\VonageMessage;
+use App\Http\Controllers\Voyager\SmsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +26,5 @@ use App\Http\Controllers\User;
 
 Route::group(['prefix' => '/'], function () {
     Voyager::routes();
+    Route::get('/sms-notification/{id?}', [SmsController::class, 'smsNotifi'], ['as' => 'sms'])->name('sms');
 });

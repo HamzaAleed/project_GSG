@@ -10,5 +10,5 @@ class Package extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $fillable = ['name', 'tracking_number', 'status'];
+    protected $fillable = ['name', 'tracking_number', 'status' , 'phone' , 'StatusDescription' , 'address' , ''];
 }

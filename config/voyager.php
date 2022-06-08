@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'hidden_files' => false,
+    'hidden_files' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -144,11 +144,12 @@ return [
         ],
 
         'widgets' => [
-
-
             'App\\Widgets\\Packages',
             'App\\Widgets\\Boxes',
             'App\\Widgets\\Invoices',
+            // 'App\\Widgets\\Packages',
+            // 'App\\Widgets\\Boxes',
+            // 'App\\Widgets\\Invoices',
             //'TCG\\Voyager\\Widgets\\PackageDimmer',
             // 'APP\\Widgets\\Packages',
 
@@ -191,7 +192,7 @@ return [
 
     'primary_color' => '#FECE08',
 
-    'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
+    'show_dev_tips' => false, // Show development tip "How To Use:" in Menu and Settings
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [

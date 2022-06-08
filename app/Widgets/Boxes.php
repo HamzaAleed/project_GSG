@@ -33,7 +33,7 @@ class Boxes extends BaseDimmer
                 'text' => 'View all boxes',
                 'link' => route('voyager.boxes.index'),
             ],
-           'image' => voyager_asset('images/widget-backgrounds/new/01.jpg'),
+            'image' => voyager_asset('images/widget-backgrounds/new/01.jpg'),
         ]));
     }
 
@@ -46,4 +46,6 @@ class Boxes extends BaseDimmer
     {
         return Auth::user()->can('browse', app(Box::class));
     }
+
+  
 }

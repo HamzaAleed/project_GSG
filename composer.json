@@ -7,10 +7,12 @@
     "require": {
         "php": "^8.0.2",
         "arrilot/laravel-widgets": "^3.13",
-        "guzzlehttp/guzzle": "^7.2",
+        "barryvdh/laravel-dompdf": "^1.0",
+        "guzzlehttp/guzzle": "^7.4",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
+        "laravel/vonage-notification-channel": "^3.0",
         "tcg/voyager": "^1.5"
     },
     "require-dev": {
@@ -56,7 +58,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
